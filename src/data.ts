@@ -1,4 +1,12 @@
-export const tweetsData = [
+export type TweetRecord = {
+  id: number;
+  username: string;
+  content: string;
+  likes: number;
+  timestamp: string;
+};
+
+export const tweetsData: TweetRecord[] = [
   { id: 1, username: "alice", content: "Just setting up my Twitter clone!", likes: 5, timestamp: "2h" },
   { id: 2, username: "bob", content: "Loving React so far!", likes: 10, timestamp: "4h" },
   { id: 3, username: "charlie", content: "This is a great project for learning.", likes: 3, timestamp: "1d" },

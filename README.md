@@ -1,8 +1,44 @@
-# Twitter Clone! 
+# Social Feed Component Exercise
 
-Hey everyone! I hope you all enjoyed our React lecture. This week you will be creating a Twitter Clone! 
+A small React and TypeScript frontend demonstrating reusable components, typed props, list rendering, conditional UI, and local interaction state.
 
-￼![Twitter Clone](https://github.com/user-attachments/assets/b1c8bbdf-cd7f-4e25-be7d-596758f4470a)
+This project originated as a React practice assignment. It is intentionally described as a client-side component exercise—not a full-stack Twitter implementation.
 
+## Features
 
-In this project you will be practicing creating components, passing down props, conditional rendering, and using state! You do not need to add the functionality to create new tweets or comments, you simply need to display the tweets on the screen and have the ability to like and unlike the tweets. Good luck!
+- Render typed post data through a reusable `Tweet` component
+- Like and unlike individual posts
+- Update like counts through component state
+- Responsive feed layout
+- Keyboard-accessible like controls
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- CSS
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Scope
+
+The data is local and resets on refresh. This repository does not include authentication, an API, a database, posting, comments, or real social-network functionality.
+
+## Future Improvements
+
+- Persist reactions locally
+- Add post composition and deletion
+- Add component tests
+- Replace mock data with a small documented API only if the project is intentionally expanded

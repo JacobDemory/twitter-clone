@@ -1,21 +1,21 @@
-// App.js
-import React from 'react';
+import './App.css';
 import Tweet from './Tweet';
 import { tweetsData } from './data';
 
-/* Do not write your tweet component here, write it in the tweet.tsx file */
-
-function App() {
+export default function App() {
   return (
-    <div className="app">
-      <h1>Twitter Clone</h1>
-      <div className="feed">
-        {/* Here you will use the data from the 'tweetsData' variable and populate every tweet
-          that you received from the 'backend' (data.ts).
-         */}
-      </div>
-    </div>
+    <main className="app">
+      <header className="page-header">
+        <p className="eyebrow">React component exercise</p>
+        <h1>Social Feed</h1>
+        <p>A small client-side feed demonstrating typed props, reusable components, and interactive state.</p>
+      </header>
+
+      <section className="feed" aria-label="Posts">
+        {tweetsData.map((tweet) => (
+          <Tweet key={tweet.id} tweet={tweet} />
+        ))}
+      </section>
+    </main>
   );
 }
-
-export default App;
