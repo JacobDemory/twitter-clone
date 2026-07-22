@@ -19,6 +19,10 @@ This project originated as a React practice assignment. It is intentionally desc
 - Vite
 - CSS
 
+## Live Demo
+
+[View the deployed component exercise](https://jacobdemory.github.io/twitter-clone/)
+
 ## Run Locally
 
 ```bash
